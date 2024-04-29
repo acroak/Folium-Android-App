@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddressFragment"
+    android:id="@+id/add_list_page"
+    android:background="@color/backgroundColor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select an Address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="32dp"
+                android:fontFamily="@font/patua_one_regular"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addressRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/addressRecycler"
+                android:layout_marginTop="32dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addAddressBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Add Address"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/outline_green_square" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/paymentBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/green_btn_bg_rounded"
+                    android:text="Continue to Payment"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

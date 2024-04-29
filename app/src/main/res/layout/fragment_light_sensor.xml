@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.LightSensorFragment"
+    android:background="@color/backgroundColor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/patua_one_regular"
+                android:textSize="32sp"
+                android:textAlignment="center"
+                android:text="Light Sensor" />
+
+            <ImageView
+                android:id="@+id/light_level_img"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                tools:src="@tools:sample/avatars"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_white_accent_border"/>
+
+            <TextView
+                android:id="@+id/lightLevelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textAlignment="center"
+                android:text="Light level:"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/detectLightButton"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/green_btn_bg_rounded"
+                android:text="Detect Light"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lightNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Read: An Important Note About Light"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

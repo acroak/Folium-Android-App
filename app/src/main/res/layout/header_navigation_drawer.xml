@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/nav_menu_banner"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/nav_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test@test.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/background_green_right_corners_rounded"/>
+
+
+
+</FrameLayout>
